@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover"
+    android:padding="30dp"
+    tools:context=".ForgetPassword">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"
+            android:padding="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make Selection"
+            android:textSize="40sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/amaranth_italic"
+            android:layout_marginTop="30dp"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select which contact detail should we use to reset your password?"
+            android:textSize="18sp"
+            android:fontFamily="@font/amaranth_italic"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/banner_background"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mobile_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/phone_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/mobile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="via sms"
+                android:textSize="30sp"
+                android:fontFamily="@font/amaranth_italic"
+                android:layout_toRightOf="@+id/mobile_icon"
+                android:layout_marginTop="35dp" />
+
+            <TextView
+                android:id="@+id/mobile_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09511317900"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:fontFamily="@font/amaranth_italic"
+                android:layout_below="@id/mobile_title"
+                android:layout_toRightOf="@+id/mobile_icon"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/banner_background"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mail_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/email_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/mail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="via mail"
+                android:textSize="30sp"
+                android:fontFamily="@font/amaranth_italic"
+                android:layout_toRightOf="@+id/mail_icon"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:id="@+id/mail_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aparecesarrah@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:fontFamily="@font/amaranth_italic"
+                android:layout_below="@id/mail_title"
+                android:layout_toRightOf="@+id/mail_icon"
+                android:layout_marginTop="10dp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

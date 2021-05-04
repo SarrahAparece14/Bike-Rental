@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp"
+    android:layout_margin="12sp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:background="@color/card4"
+        android:padding="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth_italic"
+            android:text="Mountain Bike"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="106dp"
+            android:layout_height="75dp"
+            android:src="@drawable/mountain_bike"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

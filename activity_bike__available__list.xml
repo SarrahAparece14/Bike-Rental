@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Bike_Available_List">
+    
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_margin="10dp">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="?actionBarSize">
+
+          <ImageView
+              android:id="@+id/back_pressed"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:padding="15dp"
+              android:src="@drawable/back_icon" />
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:padding="15dp"
+              android:src="@drawable/search" />
+
+      </RelativeLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Bike Categories and List"
+          android:textSize="26sp"
+          android:fontFamily="@font/amaranth_italic"
+          android:textAllCaps="true"
+          android:padding="10dp"/>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="170dp">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:background="@color/card4">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Road Bikes"
+                  android:textColor="@color/black"
+                  android:textSize="30sp"
+                  android:fontFamily="@font/amaranth_italic"
+                  android:padding="25dp"/>
+
+              <Button
+                  android:id="@+id/exroadbike"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Expand All"
+                  android:textColor="@color/black"
+                  android:background="#00000000"
+                  android:padding="20dp"
+                  android:onClick="expandRbike"
+                  android:layout_alignParentBottom="true"/>
+
+          </RelativeLayout>
+
+          <ImageView
+              android:layout_width="150dp"
+              android:layout_height="150dp"
+              android:src="@drawable/roadbike"
+              android:layout_marginTop="-20dp"
+              android:layout_alignParentRight="true"/>
+
+      </RelativeLayout>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+            app:cardBackgroundColor="#000"
+          android:layout_margin="20dp"
+          app:cardElevation="8dp">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="190dp"
+              android:background="@color/card2">
+
+              <ImageView
+                  android:layout_width="150dp"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/electric_bike"
+                android:layout_alignParentLeft="true"
+                  android:layout_marginTop="-20dp"/>
+
+
+              <TextView
+                  android:layout_width="169dp"
+                  android:layout_height="173dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="14dp"
+                  android:fontFamily="@font/amaranth_italic"
+                  android:gravity="right"
+                  android:padding="35dp"
+                  android:text="Electric Bikes"
+                  android:textColor="@color/black"
+                  android:textSize="30sp" />
+
+              <Button
+                  android:id="@+id/ebike"
+                  android:onClick="expandEbike"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Expand All"
+                  android:textColor="@color/black"
+                  android:background="#00000000"
+                  android:padding="20dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentRight="true"/>
+          </RelativeLayout>
+
+      </androidx.cardview.widget.CardView>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="170dp">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:background="@color/card3"
+              android:layout_margin="20dp">
+
+              <TextView
+                  android:layout_width="227dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:fontFamily="@font/amaranth_italic"
+                  android:padding="25dp"
+                  android:text="Mountain Bike"
+                  android:textColor="@color/black"
+                  android:textSize="25sp" />
+
+              <Button
+                  android:id="@+id/mbike"
+                  android:onClick="expandMbike"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Expand All"
+                  android:textColor="@color/black"
+                  android:background="#00000000"
+                  android:padding="20dp"
+                  android:layout_alignParentBottom="true"/>
+
+          </RelativeLayout>
+
+          <ImageView
+              android:layout_width="114dp"
+              android:layout_height="148dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="25dp"
+              android:layout_marginBottom="-20dp"
+              android:src="@drawable/mountain_bike" />
+
+      </RelativeLayout>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:cardBackgroundColor="#000"
+          android:layout_margin="20dp"
+          app:cardElevation="8dp">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="190dp"
+              android:background="@color/colorAccent">
+
+              <ImageView
+                  android:layout_width="120dp"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/women"
+                  android:layout_marginLeft="20dp"/>
+
+
+              <TextView
+                  android:layout_width="169dp"
+                  android:layout_height="173dp"
+                  android:text="Women Bikes"
+                  android:textColor="@color/black"
+                  android:layout_marginRight="14dp"
+                  android:textSize="30sp"
+                  android:fontFamily="@font/amaranth_italic"
+                  android:layout_alignParentRight="true"
+                  android:padding="35dp"/>
+
+              <Button
+                  android:id="@+id/wbike"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Expand All"
+                  android:textColor="@color/black"
+                  android:background="#00000000"
+                  android:padding="20dp"
+                  android:onClick="expandWbike"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentRight="true"/>
+          </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+
+
+  </LinearLayout>
+
+
+</ScrollView>

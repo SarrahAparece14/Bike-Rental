@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneVerification"
+    android:orientation="vertical"
+    android:background="@drawable/cover"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="200dp"
+        android:src="@drawable/front1"
+        android:layout_gravity="center"
+        android:transitionName="app_logo"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERIFY PHONE NO."
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:fontFamily="@font/amaranth_italic"
+        android:layout_marginTop="-10dp"
+        android:transitionName="logo_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter verification code to continue"
+        android:layout_gravity="center"
+        android:textSize="18sp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:layout_marginTop="80dp"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/enter_otpcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:textColorHint="@color/white"
+        android:background="#1E000000"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/verify_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:layout_marginTop="15dp"
+        android:background="@color/card3"/>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
+
+
+
+</LinearLayout>
