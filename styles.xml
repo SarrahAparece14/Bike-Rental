@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Style.BikeRental" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+
+    <color name="colorPrimary">#FF000000</color>
+    <color name="colorPrimaryDark">#FF3700B3</color>
+    <color name="colorAccent">#36F4CE</color>
+
+    <!-- Menu Style. -->
+    <style name="navigationTheme" >
+
+    <!-- Color of text and icon. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+
+    </style>
+</resources>
